@@ -9,6 +9,7 @@ module PragmaticSegmenter
         de_AT     = ["oö", "oö", "nö", "vbg", "vbg", "vlbg", "vlbg", "stmk", "stmk", "knt", "knt", "bgld", "bgld", "sbg", "sbg", "hbf", "hs", "vs", "zib", "wksta"]
         de_DE     = ["bw", "by", "be", "bb", "hb", "hh", "he", "mv", "ni", "nw", "rp", "sl", "sn", "st", "sh", "th", ]
         jobs      = ['univ.-prof', 'o.univ.-prof', 'ao.univ.prof', 'ass.prof', 'hon.prof', 'univ.-doz', 'univ.ass', 'stud.ass', 'projektass', 'ass', 'di', 'dipl.-ing', 'mag']
+        eng       = ["aut", "ger", "cze", "gb", "gbr", "uk", "eng", "ita", "gre", "swe", "nor", "nld", "fin", "dnk", "bel", "esp", "tur", "fra", "rus", "pol", "che", "bra", "arg", "aus", "afg", "arm", "bih", "bol", "bol", "can", "chn", "col", "irl", "est", "irn", "isr", "irq", "jap", "jor", "ltu", "svk", "lie", "lux", "mex", "nzl", "per", "prt", "syr", "tun", "ukr", "svn", "e.g", "i.e", "approx", "bc", "etc", "fig", "gal", "ltd", "mr", "mrs", "ms", "addr", "corr", "diy", "esp", "est", "excl", "foll", "incl", "jr", "misc", "n/a", "sth", "vs", "w/o", "hr", "mth", "mthly", "p.a", "mph", "yd", "ft", "bn", "mill", "oz", "resp"]
         ABBREVIATIONS = Set.new( original.concat(de).concat(de_AT).concat(de_DE).concat(jobs).concat(eng) ).freeze
         NUMBER_ABBREVIATIONS = Set.new(['art', 'ca', 'no', 'nos', 'nr', 'pp']).freeze
         PREPOSITIVE_ABBREVIATIONS = [].freeze
